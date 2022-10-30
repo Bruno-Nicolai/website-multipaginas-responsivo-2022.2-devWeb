@@ -1,0 +1,87 @@
+.cookies-container {
+  color: var(--color-white);
+  font-family: 'Montserrat', sans-serif;
+
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.cookies-content {
+  margin: 0px;
+  background: var(--color-black);
+  max-width: 100vw;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 10px;
+  display: block;
+  gap: 0.5rem;
+  transform: translateY(-3rem);
+  animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.cookies-container .cookies-content p {
+  text-align: justify;
+  line-break: auto;
+}
+
+.cookies-pref label {
+  margin-right: 0;
+}
+
+.cookies-more {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--color-black);
+  background: var(--color-white);
+  cursor: pointer;
+  border: var(--color-gray-variant) 1px solid;
+  border-radius: 3px;
+  padding: 1.2rem 1rem;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+
+.cookies-container .cookies-content a {
+  color: var(--color-success);
+}
+
+.cookies-save {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background: var(--color-success);
+  color: var(--color-white);
+  cursor: pointer;
+  border: var(--color-gray-variant) 1px solid;
+  border-radius: 3px;
+  padding: 1.2rem 1rem;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* ============ MEDIA QUERIES ============ */
+
+/* TABLETS */
+@media screen and (max-width: 1024px) {
+  .cookies-container .cookies-content p {
+    text-align: justify;
+  }
+}
+
+/* PHONES */
+@media screen and (max-width: 600px) {
+  .cookies-container .cookies-content {
+    text-align: center;
+  }
+}
